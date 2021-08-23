@@ -106,7 +106,7 @@ app.get('*',(req,res)=>{ // Bunu sona yazdık çünkü url geldiğinde yukarıda
     })
 })
 
-LOCALHOST
+//LOCALHOST
 app.listen(port, () =>{// Start up the server and it has specific port(use development port 3000)
                         // Takes 2 args first port, other callback func
     console.log("Server is up on port "+3000) // this message is never going to display to someone in the browser
