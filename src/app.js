@@ -32,7 +32,7 @@ hbs.registerPartials(partialsPath) //takes the directory where the partials live
 
 app.get('',(req,res)=>{
     res.render('index',{
-        title:"Weather App",
+        title:"Weather",
         name:"Enes Billsel"
     }) // render allows us to render one of our views we've configured express to use the view engine hbs
         // takes naem of hbs file from views second arg is dynamic data

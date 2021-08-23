@@ -10,7 +10,7 @@ messageTwo.textContent=''
 weatherForm.addEventListener('submit', (e) => {
     e.preventDefault() // prevent refresh browser
     const location = search.value
-    messageOne.textContent = "loding..."
+    messageOne.textContent = "Loading..."
     fetch('/weather?address=' + location).then((response) => { // fetch edildikten sonra then yapıyor
         response.json().then((data) => {//json geldiğinde then yapıyor
             if (data.error) {
