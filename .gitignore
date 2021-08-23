@@ -1,1 +1,8 @@
 node_modules/
+src/dynamic.js
+src/info_app.js
+src/queryString.js
+src/static.js
+public/about.html
+public/help.html
+public/index2.html
