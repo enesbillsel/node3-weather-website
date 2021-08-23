@@ -9,7 +9,7 @@ const forecast = (latitude, longtitude, callback) => {
         } else if (body.success != undefined) {
             callback(body.error.info, undefined)
         } else {
-            callback(undefined, body.current.weather_descriptions[0] + " throughout the day.  It's currently " + body.current.temperature + " degrees out. It feels like " + body.current.feelslike + " degrees out.")
+            callback(undefined, body.current.weather_descriptions[0] + " throughout the day.  It's currently " + body.current.temperature + " degrees out. It feels like " + body.current.feelslike + " degrees out. The humidity is "+body.current.humidity+"%")
         }
     })
 }
