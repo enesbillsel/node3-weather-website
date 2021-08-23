@@ -10,6 +10,7 @@ const forecast = require('./utils/forecast')
 
 
 const app = express() // doesnt take any args
+const port = process.env.PORT || 3000 // heroku için yaptık
 
 // Define paths for Express config
 const publicDirectoryPath = path.join(__dirname,'../public')
@@ -105,8 +106,9 @@ app.get('*',(req,res)=>{ // Bunu sona yazdık çünkü url geldiğinde yukarıda
     })
 })
 
-app.listen(3000, () =>{// Start up the server and it has specific port(use development port 3000)
+LOCALHOST
+app.listen(port, () =>{// Start up the server and it has specific port(use development port 3000)
                         // Takes 2 args first port, other callback func
-    console.log("Server is up on port 3000.") // this message is never going to display to someone in the browser
+    console.log("Server is up on port "+3000) // this message is never going to display to someone in the browser
 }) 
 
