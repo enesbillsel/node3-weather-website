@@ -10,7 +10,7 @@ const forecast = require('./utils/forecast')
 
 
 const app = express() // doesnt take any args
-const port = process.env.PORT || 3000 // heroku için yaptık
+const port = process.env.PORT || 3000 // heroku için yaptık. env yoksa 3000 portu kullanılıyor
 
 // Define paths for Express config
 const publicDirectoryPath = path.join(__dirname,'../public')
